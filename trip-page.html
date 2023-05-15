@@ -1,0 +1,382 @@
+<!doctype html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <meta property="og:title" content="Livre">
+    <meta property="og:description" content="Livre">
+    <meta property="og:type" content="website">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image" content="assets/img/Livre-logo.png">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/icon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css">
+    <title>Livre</title>
+</head>
+
+<body>
+
+    <div id="mySidenav" class="sidenav" style="width: 0px;">
+        <div class="close-btn">
+            <a href="javascript:void(0)" onclick="closeNav()">
+                <i class="fal fa-times"></i>
+            </a>
+        </div>
+        <div class="menu-body">
+            <div class="links">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <a class="nav-link" href="#about" onclick="closeNav()">عن ليفي</a>
+                    <a class="nav-link" href="#partner" onclick="closeNav()">كن شريك</a>
+                    <a class="nav-link" href="#contact" onclick="closeNav()">تواصل معنا</a>
+                    <a class="nav-link" href="trips.html" onclick="closeNav()">الرحلات</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header id="navbar" class="d-flex align-items-center">
+        <div class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/Livre-logo.png">
+                </a>
+                <div class="navbar-links">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">من نحن</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#partner">كن شريك</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">تواصل معنا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="trips.html">الرحلات</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="toggler buttons d-lg-flex">
+                    <a href="#" class="icon">
+                        <img src="assets/img/instagram.png">
+                    </a>
+                    <a href="#" class="icon">
+                        <img src="assets/img/twitter.png">
+                    </a>
+                    <div class="dropdown user">
+                        <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/img/user.png" class="img-fluid">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="profile.html"><img src="assets/img/user-icon.png"
+                                        class="icon">حسابي</a></li>
+                            <li><a class="dropdown-item" href="tickets.html"><img src="assets/img/ticket.png"
+                                        class="icon">التذاكر</a></li>
+                            <li><a class="dropdown-item" href="saved.html"><img src="assets/img/saved.png"
+                                        class="icon">المحفوظات</a>
+                            </li>
+                            <li><a class="dropdown-item" href="logout.html"><img src="assets/img/exit.png"
+                                        class="icon">تسجيل
+                                    الخروج</a></li>
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation" id="toggler">
+                        <i class="fal fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page" id="payment">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-7 col-12">
+                        <div class="swiper mySwiper3">
+                            <a class="white-btn" onclick="SaveFunction(this)">
+                                <i class="fal fa-bookmark"></i></a>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="assets/img/mountain-1.png" class="img-fluid">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/mountain-2.png" class="img-fluid">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="assets/img/mountain-3.png" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="title-rate">
+                            <div class="">
+                                <h4 class="primary-color">تخييم في الجبال</h4>
+                                <p class="plain">
+                                    <i class="far fa-map-marker-alt"></i>
+                                    جدة
+                                </p>
+                            </div>
+                            <div class="rate">
+                                <a data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#Rate-modal">
+                                    <i class="far fa-star"></i>
+                                </a>
+                                <span>4.5</span>
+                                <p class="plain">
+                                    (100 م)
+                                </p>
+                            </div>
+                        </div>
+                        <p class="plain  mb-4">
+                            خط سير الرحلة التي تغطي أفضل الأنشطة وجولات بالي مثل ؛ ركوب المياه البيضاء, الرياضات
+                            المائية جولة غروب أولواتو ، جولة معبد تاناه لوت ، جولة نوسا بينيدا ، جولة بركان كنتاماني ،
+                            جولة
+                            مدينة دينباسار ، وجولة بالي الشرقية.خط سير الرحلة التي تغطي أفضل الأنشطة وجولات بالي
+                            مثل ؛ ركوب المياه البيضاء الرياضات المائية جولة غروب أولواتو جولة معبد تاناه لوت ، جولة نوسا
+                            بينيدا ، جولة بركان كنتاماني ، جولة مدينة دينباسار وجولة بالي الشرقية
+                        </p>
+
+                    </div>
+                    <div class="col-lg-4 col-md-5 col-12">
+                        <div class="white-bg tab">
+                            <P class="black-text">
+                                <i class="fal fa-calendar-minus"></i>
+                                12/April
+                            </P>
+                            <p class="days">
+                                <i class="fal fa-clock"></i>
+                                6 أيام
+                            </p>
+                            <p class="youth">
+                                <i class="fal fa-walking"></i>
+                                شباب
+                            </p>
+                            <small>السعر</small>
+                            <h4 class="primary-color">
+                                200 ريال
+                            </h4>
+                            <button type="submit" class="primary-btn w-100 mt-2" onclick="nextPrev(1)">حجز</button>
+                        </div>
+
+                        <div class="white-bg tab">
+                            <h5 class="black-text">
+                                شراء تذاكر
+                                <a class="gray-link" onclick="nextPrev(-1)" id="prevBtn">
+                                    <i class="fal fa-long-arrow-left"></i>
+                                </a>
+                            </h5>
+
+                            <div class="mb-2">
+                                <small>عدد الأفراد</small>
+                                <div class="input-group plus-minus-input">
+                                    <button type="button" class="button" data-quantity="plus" data-field="quantity">
+                                        <i class="fal fa-plus"></i>
+                                    </button>
+                                    <input class="input-group-field" type="number" name="quantity" value="1">
+                                    <button type="button" class="button" data-quantity="minus" data-field="quantity">
+                                        <i class="fal fa-minus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="primary-data">
+                                <p class="primary-color">الفرد الأول</p>
+                                <div class="mb-2">
+                                    <input type="text" class="form-control global" id="" placeholder=""
+                                        value="Ahmed Ali " style="font-family: Tajawal, 'Font Awesome 5 Pro'" disabled>
+                                </div>
+                                <div class="mb-2">
+                                    <label>
+                                        تاريخ الميلاد
+                                    </label>
+                                    <input type="date" class="form-control global" id="" placeholder=""
+                                        style="font-family: Tajawal, 'Font Awesome 5 Pro'" required>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        هل تحتاج إلى كرسي متحرك؟
+                                    </label>
+                                </div>
+                                <p class="black-text">النوع</p>
+                                <div class="d-flex mb-2 justify-content-around">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" value="male" id="0" name="gender">
+                                        <label class="form-check-label" for="0">
+                                            ذكر
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" value="female" id="1"
+                                            name="gender">
+                                        <label class="form-check-label" for="1">
+                                            أنثى
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <small>السعر</small>
+                            <h4 class="primary-color">
+                                200 ريال
+                            </h4>
+                            <button type="submit" class="primary-btn w-100 mt-2" onclick="nextPrev(1)"
+                                id="nextBtn">الدفع</button>
+                        </div>
+
+                        <div class="white-bg tab">
+                            <h5 class="black-text">
+                                طريقة الدفع
+                                <a class="gray-link" onclick="nextPrev(-1)" id="prevBtn">
+                                    <i class="fal fa-long-arrow-left"></i>
+                                </a>
+                            </h5>
+                            <div class="summary">
+                                <div class="d-flex justify-content-between">
+                                    <p class="black-text">رحلة تخييم</p>
+                                    <p class="black-text">
+                                        <i class="far fa-map-marker-alt"></i>
+                                        جدة
+                                    </p>
+                                </div>
+                                <p class="black-text">5 أيام</p>
+                                <p class="black-text">عدد الأفراد 2</p>
+                                <p class="black-text">1 كرسي متحرك</p>
+                            </div>
+
+                            <div class="payment-methods">
+                                <div class="tabs">
+                                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <a class="visa" id="visa-section">
+                                                <img src="assets/img/visa.png">
+                                            </a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="apple" id="apple-section">
+                                                <img src="assets/img/apple-pay.png">
+                                            </a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="mada" id="mada-section">
+                                                <img src="assets/img/mada.png">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="visa method">
+                                    <form class="row g-3">
+                                        <div class="col-12 mb-2">
+                                            <input type="text" class="form-control global" id=""
+                                                placeholder=" أسم حامل البطاقة"
+                                                style="font-family: Tajawal, 'Font Awesome 5 Pro'" required>
+                                        </div>
+                                        <div class="col-12 mb-2">
+                                            <input type="number" class="form-control global" id=""
+                                                placeholder="رقم البطاقة "
+                                                style="font-family: Tajawal, 'Font Awesome 5 Pro'" required>
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="card-pin" class="form-label">الرقم السري<i
+                                                    class="required"></i></label>
+                                            <input required type="number" class="form-control global" id="card-pin"
+                                                placeholder="XXXX">
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="card-validation" class="form-label">صالحة حتى<i
+                                                    class="required"></i></label>
+                                            <input required type="number" class="form-control global"
+                                                id="card-validation" placeholder="XXXX">
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="card-cvv" class="form-label">CVV<i class="required"></i></label>
+                                            <input required type="number" class="form-control global" id="card-cvv"
+                                                placeholder="XXX">
+                                        </div>
+                                    </form>
+                                </div>
+                                <small>السعر</small>
+                                <h4 class="primary-color">
+                                    200 ريال
+                                </h4>
+                                <button type="submit" class="primary-btn w-100 mt-2" onclick="nextPrev(1)"
+                                    id="nextBtn">الدفع</button>
+                            </div>
+                        </div>
+
+                        <div class="white-bg tab">
+                            <div class="d-flex flex-column align-items-center">
+                                <img class="img-fluid w-75" src="assets/img/success.png">
+                                <h5 class="black-title">تمت عملية الدفع بنجاح</h5>
+                                <a class="primary-color" type="button" href="trips.html">تصفح المزيد</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Modal -->
+        <div class="modal fade" id="Rate-modal" tabindex="-1" aria-labelledby="Rate-modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <h5 class="modal-title primary-color" id="Rate-modalLabel">
+                        قيم الرحلة
+                    </h5>
+                    <p class="plain">ما مدى مطابقة الوصف للرحلة</p>
+                    <div class="modal-body">
+                        <div class="stars">
+                            <div class="d-flex rating">
+                                <a class="rating-star"><i class="fal fa-star"></i></a>
+                                <a class="rating-star"><i class="fal fa-star"></i></a>
+                                <a class="rating-star"><i class="fal fa-star"></i></a>
+                                <a class="rating-star"><i class="fal fa-star"></i></a>
+                                <a class="rating-star"><i class="fal fa-star"></i></a>
+                            </div>
+                        </div>
+                        <textarea class="form-control global" placeholder="إكتب تعليقك" id="feedback-text"
+                            rows="5"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <a data-bs-dismiss="modal"> إلغاء</a>
+                        <button type="submit" class="primary-btn">إرسال التققييم</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div>
+                <p> © جميع الحقوق محفوظه 2022</p>
+                <a href="https://www.softwarecloud2.com">Software Cloud 2</a>
+            </div>
+            <div>
+                <img src="assets/img/software-cloud-2.png" class="img-fluid">
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/fa-pro.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

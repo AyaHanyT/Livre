@@ -1,0 +1,153 @@
+<!doctype html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <meta property="og:title" content="Livre">
+    <meta property="og:description" content="Livre">
+    <meta property="og:type" content="website">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image" content="assets/img/Livre-logo.png">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/icon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css">
+    <title>Livre</title>
+</head>
+
+<body>
+    <main>
+        <section id="login-form" class="login-form">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="form">
+                            <div class="title">
+                                <h5>
+                                    قم بإنشاء حسابك الآن
+                                </h5>
+                            </div>
+                            <a class="link" href="login.html">لديك حساب بالفعل؟ قم بتسجيل الدخول
+                                <i class="fal fa-long-arrow-left"></i>
+                            </a>
+                            <div class="img-warpper">
+                                <div class="img-upload-warpper">
+                                    <div class="image-upload-wrap">
+                                        <input required class="img-upload-input" type='file'
+                                            onchange="readURLimg(this);" accept="image/*" id="user-img" />
+                                        <div class="drag-text">
+                                            <img src="assets/img/browse.png" class="img=fluid">
+                                        </div>
+                                    </div>
+                                    <div class="img-upload-content">
+                                        <img class="img-upload-image" src="#" alt="your image" />
+                                        <div class="remove-image-warpper">
+                                            <button type="button" onclick="removeUploadimg()" class="remove-image">
+                                                <i class="fal fa-times"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <label for="user-img" class="form-label">
+                                    قم بإضافة صورة
+                                </label>
+                            </div>
+                                <div class="mb-2">
+                                    <input type="text" class="form-control global" id="" placeholder=" الأسم"
+                                        style="font-family: Tajawal, 'Font Awesome 5 Pro'" required>
+                                </div>
+                                <div class="mb-2">
+                                    <input type="tel" class="form-control global" id="" placeholder="رقم الجوال "
+                                        style="font-family: Tajawal, 'Font Awesome 5 Pro'" required>
+                                </div>
+                                <div class="mb-2">
+                                    <input type="email" class="form-control global" id="" placeholder="البريد الإلكتروني "
+                                    style="font-family: Tajawal, 'Font Awesome 5 Pro'" required>
+                                </div>
+                                <div class="mb-2">
+                                    <select class="form-select global" aria-label="Default select example" required>
+                                        <option style="font-family: Tajawal, 'Font Awesome 5 Pro'">المدينة </option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                </div>
+                                <div class="mb-2">
+                                    <input type="password" class="form-control global" id="" placeholder=" كلمة المرور"
+                                    style="font-family: Tajawal, 'Font Awesome 5 Pro'" required>
+                                </div>
+                                <p>عند تسجيلك فأنت توافق على
+                                    <a class="primary-link" data-bs-dismiss="modal" data-bs-toggle="modal"
+                                    data-bs-target="#terms-modal"> الشروط و الأحكام</a>
+                                </p>
+                            <button type="submit" class="primary-btn">إنشاء الحساب</button>
+                            <a class="link back" onclick="history.back()">
+                                الرجوع
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+          <!-- Modal -->
+          <div class="modal fade" id="terms-modal" tabindex="-1" aria-labelledby="terms-modalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                  <h5 class="modal-title" id="terms-modalLabel">
+                    شروط و أحكام الأستخدام
+                  </h5>
+                  <div class="modal-body">
+                      <p class="des-text">
+                        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة
+                        لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن
+                        تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى
+                        زيادة عدد الحروف التى يولدها التطبيق. إذا كنت تحتاج إلى عدد
+                      </p>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                        أوافق
+                        </label>
+                      </div>
+                      <a type="button" class="primary-btn" data-bs-dismiss="modal">المتابعه</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div>
+                <p> © جميع الحقوق محفوظه 2022</p>
+                <a href="https://www.softwarecloud2.com">Software Cloud 2</a>
+            </div>
+            <div>
+                <img src="assets/img/software-cloud-2.png" class="img-fluid">
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="assets/js/fa-pro.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
